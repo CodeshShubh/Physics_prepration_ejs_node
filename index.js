@@ -6,7 +6,9 @@ import userRoutes from './routes/userRoutes.js';
 import staticRoutes from './routes/staticRoutes.js'
 
 const app = express();
- 
+
+const PORT = process.env.PORT || 8000;
+
 dbConnection(process.env.URI);
 
 
