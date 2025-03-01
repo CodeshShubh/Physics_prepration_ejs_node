@@ -1,0 +1,15 @@
+-> other ->
+-> sidebar with topics
+ where first button then filter videos 
+
+
+-> admin access -> nav go to home -> text only admin panel 
+section  title subtitle  div -> video-link
+
+
+{
+    section:
+    title:
+    about:
+    url:
+}

@@ -1,0 +1,16 @@
+:root {
+    --primary-color: #f17d3a;
+    --secondary-color: #102faf;
+    --background-color: #f2cbb4;
+  }
+  
+  :root{
+    font-family: "Inter", serif;
+    background-color: var(--background-color);
+  }
+
+
+
+  /* #f29152 
+  #f39e68*
+  #f39f6a/

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="/css/Register.css" />
+  </head>
+  <body>
+    <%- include('../partials/Header.ejs')  %>
+    
+   <main >
+    <div class="form_container">
+      <form method="post" action="/User/signup">
+        <h1>Register</h1>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="Email*"
+        />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          placeholder="Full Name*"
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          placeholder="Password*"
+        />
+        <input
+          type="password"
+          name="confirmpassword"
+          id="confirmpassword"
+          required
+          placeholder="Comfirm Password*"
+        />
+        <p id="message" style="color: #fbf8f6">Looking Good</p>
+        <button type="submit" id="btn">Submit</button>
+      </form>
+    </div>
+   </main>
+    <%- include('../partials/Footer.ejs')  %>
+
+    <script>
+      const email = document.getElementById("email");
+      const password = document.getElementById("password");
+      const confirmpassword = document.getElementById("confirmpassword");
+      let p = document.getElementById("message");
+
+      email.addEventListener("input", () => {
+        if (!email.value.includes(".com") || !email.value.includes("@")) {
+          p.textContent = `Please Enter valid email`;
+          p.style.color = "red";
+        } else {
+          p.textContent = "Looking Good";
+          p.style.color = "green";
+        }
+      });
+
+      password.addEventListener("input", passwordValidation);
+      confirmpassword.addEventListener("input", passwordValidation);
+
+      function passwordValidation()  {
+        if (password.value !== confirmpassword.value) {
+          p.textContent = `Confirm Pasword does not Math with your password`;
+          p.style.color = "red";
+        } else {
+          p.textContent = "Looking Good";
+          p.style.color = "green";
+        }
+      };
+    </script>
+  </body>
+</html>

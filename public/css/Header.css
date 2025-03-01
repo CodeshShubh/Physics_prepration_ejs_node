@@ -1,0 +1,153 @@
+@import 'colors.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+    background-color: var(--background-color); 
+}
+
+
+
+.header_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    box-shadow: 0px 0px 5px 0px rgb(110, 104, 104);
+    border-radius: 0px 0px 5px 5px;
+}
+.logo{
+    max-width: 72px;
+    max-height: 72px;
+    margin-left: 3rem;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.logo img{
+ width: 100%;
+ height: auto;
+  display: block;
+ cursor: pointer;
+}
+
+.search_box{
+    width: 20%;
+    display: flex;
+    /* justify-content: space-between; */
+    border: 1px solid #f2cbb4;
+    border-radius: 5px;
+    padding: 0.1rem;
+}
+
+.search_box input {
+    padding: 0.6rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+.search_box button{
+    all: unset;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    min-width: 5rem;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.3s  ease-in;
+}
+.search_box button:hover{
+    background-color: var(--background-color);
+    border: 1px solid black;
+    color: black;
+}
+
+.search_box input::placeholder{
+    font-family: "inter", serif;
+}
+
+
+
+.nav_links{
+    width: 35%;
+ /* border: 1px solid red; */
+}
+
+.nav_links ul{
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.nav_links ul a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    transition: all 0.5 ease-in;
+
+}
+.nav_links ul a:hover{
+   color: var(--primary-color);
+}
+
+
+
+.auth_btns{
+    padding: 1rem;
+   display: flex;
+   gap: 1.5rem;
+   margin-right: 1rem;
+   cursor: pointer;
+}
+
+.auth_btns a:first-child{
+    min-width: 4rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 0.1px solid black;
+    transition: all 0.3s ease-in;
+    color: black;
+    text-decoration: none;
+}
+
+
+.auth_btns a:first-child:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+
+.auth_btns a:last-child{
+    min-width:3rem;
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    color: white;
+    border: 1px solid transparent;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}
+
+.auth_btns a:last-child:hover{
+    background-color: var(--background-color);
+    border: 1px solid black;
+    color: black;
+}

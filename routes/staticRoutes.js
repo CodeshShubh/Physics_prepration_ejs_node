@@ -1,0 +1,20 @@
+import express from 'express';
+const router = express.Router();
+
+
+router.get('/',(req,res)=>{
+    res.render('./home.ejs')
+})
+.get('/Register',(req,res)=>{
+    res.render('./auth/Register.ejs')
+})
+.get('/Login',(req,res)=>{
+    res.render('./auth/login.ejs')
+  })
+  .get('/Courses',(req,res)=>{
+    res.render('./Courses/Courses.ejs')
+  })
+
+
+
+export default router;
