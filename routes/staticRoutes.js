@@ -3,7 +3,7 @@ const router = express.Router();
 
 
 router.get('/',(req,res)=>{
-    res.render('./Home.ejs')
+    res.render('./home.ejs')
 })
 .get('/Register',(req,res)=>{
     res.render('./auth/Register.ejs')
