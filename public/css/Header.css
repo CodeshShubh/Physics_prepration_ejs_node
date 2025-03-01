@@ -13,7 +13,7 @@ header{
     z-index: 9999;
     background-color: var(--background-color); 
 }
-
+ 
 
 
 .header_container{
@@ -151,3 +151,16 @@ header{
     border: 1px solid black;
     color: black;
 }
+
+
+
+
+@media (max-width: 768px) {
+    .nav_links,
+    .search_box {
+      display: none;
+    }
+
+  
+  }
+  
