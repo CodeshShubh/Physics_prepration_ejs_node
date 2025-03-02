@@ -73,7 +73,7 @@
 
 
 
-
+/* 
 .sections_containers{
    padding: 1rem;
    width: 100vw;
@@ -137,10 +137,52 @@
     background-color: #f2cbb4;
     color: #000;
     border: 1px solid black;
-}
+} */
 
 .home2{
     display: none;
+}
+
+
+
+.latest_section{
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    /* box-shadow: 10px 10px 10px rgb(91, 90, 90); */
+
+}
+
+
+.latest_btn a{
+
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #f17d3a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+
+.latest_btn a:hover {
+    background-color: #f2cbb4;
+    color: #000;
+    border: 1px solid black;
+}
+.video_iframe_contianer{
+    width: 100%;
+    text-align: center;
+}
+.latest_section iframe {
+    width: 60%;
+    height: 400px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px rgb(91, 90, 90);
+    margin: 2rem 0rem 2rem;
 }
 
 
@@ -183,10 +225,6 @@
 
  .home2 .container2 .text_btn2 a{
      background-color: var(--primary-color);
-     border: 1px solid red;
-     position: relative;
-     left: 9rem;
-     top: 3rem;
      padding: 0.5rem;
      border-radius: 5px;
      cursor: pointer;
@@ -201,89 +239,6 @@
       border: 1px solid black;
  }
 
-
-
-
-
-
-
-/* video section css */
-
-
-
- .sections_containers{
-    padding: 0.5rem;
-    width: 100vw;
-    height: auto;
-   
- }
- 
- .video_section_cards{
-     display: flex;
-     justify-content: center;
-    align-items: center;
-    gap: 1rem;
- }
- .sections_containers h1{
-     padding: 1rem;
-     margin-bottom: 0.5rem;
-     border-radius: 5px;
-     box-shadow: 10px 10px 10px rgb(91, 90, 90) ;
-     background-color: #f17d3a;
- }
- 
- .video_link{
-     width: 99%;
-     padding: 0.1rem;
-     align-items: center;
-     text-align: center;
-     border-radius: 5px;
-  box-shadow: 10px 10px 10px rgb(91, 90, 90) ;
- 
- }
- .video_link h3{
-     padding: 0.5rem;
-     margin: 0.2rem 0rem 0.2rem;
-     border-radius: 5px;
-     background-color: #f17d3a;
- }
- 
- .video_link iframe{
-     width:390;
-     height:200;
- }
- 
- .video_link p{
-     display: none;
-     font-size: small;
- }
- 
- #about_btn{
-     all: unset;
-     padding: 0.8rem 2rem;
-     background-color: #f17d3a;
-     color: #fff;
-     text-decoration: none;
-     border-radius: 5px;
-     margin: 0.2rem;
-     border: 1px solid transparent;
-     transition: all 0.3s ease;
- }
- 
- #about_btn:hover{
-     background-color: #f2cbb4;
-     color: #000;
-     border: 1px solid black;
- }
-
-
-
-
-
-
- 
-
- 
 
 }
 
